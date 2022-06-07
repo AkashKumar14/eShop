@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://AkashKumar14.github.io/eShop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "firebase": "^4.8.0",
     "firebase-login": "^1.0.0",
     "firebase-tools": "^11.0.1",
+    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-currency-format": "^1.1.0",
     "react-dom": "^18.1.0",
@@ -21,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
